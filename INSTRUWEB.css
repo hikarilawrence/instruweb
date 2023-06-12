@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    background-image: url(bg5.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*GO TO TOP BUTTON*/
+#scrollBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 70px;
+    border-radius: 18px;
+  }
+  
+  #scrollBtn:hover {
+    background-color: #009688;
+  }
+  
+
+/***************************HOMEPAGE****************************/
+
+/*HEADER*/
+.logo {
+    color: gold;
+    font-size: 47px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.span1 {
+    color: orange;
+}
+.logo .fa-solid {
+    color: #009688;
+}
+li {
+    list-style: none;
+}
+.links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.links a:hover {
+    color: green;
+}
+header {
+    position: relative;
+    padding: 60px 80px;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .links {
+    display: flex;
+    gap: 220px;
+    padding: 30px;
+}
+.navbar .toggle_btn {
+    color: #009688;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 130px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+    height: 240px;
+}
+.dropdown_menu li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.dropdown_menu li a:hover {
+    color: #009688;
+}
+
+/*HOMEPAGE CONTENT*/
+.homecontent {
+    width: 100%;
+}
+.logo2 {
+    width: 730px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.homepage {
+    width: 50%;
+    float: right;
+    margin-top: 170px;
+}
+.homepage h1 {
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding-bottom: 30px;
+}
+.homepage p {
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+    margin-right: 120px;
+}
+.s1 {
+    color: orange;
+}
+.musical {
+    color: Coral;
+}
+.instruments {
+    color: cyan;
+}
+.btn {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #009688;
+    outline: none;
+    background: transparent;
+    padding: 20px 70px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.btn a {
+    text-decoration-line: none;
+    color: #009688;
+    font-weight: bold;
+}
+.btn:hover {
+    scale: 1.05;
+}
+.btn:active {
+    scale: 0.95;
+}
+
+/***************************ABOUT SECTION****************************/
+#aboutus {
+    width: 100%;
+    padding: 40px;
+    background-image: url(bg6.png);
+}
+.aboutcont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abtlist .fa-solid {
+    color: #009688;
+}
+.abt {
+    width: 50%;
+    float: right;
+    cursor: pointer;
+}
+.abt h2 {
+    color: white;
+    font-size: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.abt p {
+    color: white;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 30px 0 0 5px;
+    text-align: justify;
+}
+.inst {
+    color: #009688;
+}
+.logo3 {
+    height: auto;
+    width: 700px;
+    float: left;
+    margin: 150px 0 150px 50px;
+    border: 2px double green;
+    cursor: pointer;
+}
+.abtlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.abtlist div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.abtlist div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.abtlist div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.abtlist div a {
+    text-decoration: none;
+    color: green;
+    font-size: 17px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.abtlist div:hover {
+    background: orange;
+    transform: translateY(-10px);
+}
+
+/***************************SERVICES SECTION****************************/
+#services {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    color: #fff;
+    background-color: #009688;
+    background-image: url(bg9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.srvcs {
+    font-size: 50px;
+    font-weight: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.list div:hover {
+    background: green;
+    transform: translateY(-10px);
+}
+.products {
+    margin-top: 50px;
+    margin-left: 205px;
+}
+.products .products1 {
+    width: 267px;
+    border: 2px solid coral;
+}
+.products .products2 {
+    width: 390px;
+    border: 2px solid coral;
+}
+.products .products3 {
+    width: 590px;
+    border: 2px solid coral;
+}
+
+
+
+/***************************CONTACT SECTION****************************/
+#contactus {
+    background-image: url(bg10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    height: 100vh;
+}
+.contactcontainer {
+    width: 100%;
+    padding: 100px 100px;
+}
+.contact-box {
+    background-color: white;
+    display: flex;
+}
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background-color: #161616;
+    color: #fff;
+}
+.contactcontainer h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contactcontainer p {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #161616;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+    line-gap-override: 3px;
+    font-size: 20px;
+}
+.btn2 {
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3 {
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+tr td:first-child {
+    padding-right: 20px;
+}
+tr td {
+    padding-top: 20px;
+    color: #fff;
+}
+.socialicons .fa-brands{
+    color: orange;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+/***************************FOOTER****************************/
+footer {
+    background: #161616;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/***************************RESPONSIVE****************************/
+
+/*1230px*/
+@media (max-width: 1230px){
+    /*NAV*/
+    .navbar .links{
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+
+    /*HOMEPAGE*/
+    .logo2 {
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .homepage {
+        margin: 100px 0 0 0;
+    }
+    .homepage h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .homepage p {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .btn {
+        padding: 20px 50px;
+        margin-left: 130px;
+    }
+
+    /*ABOUT*/
+    .logo3 {
+        width: 500px;
+        margin: 20px 0 0 20px;
+    }
+    .abt h2 {
+        font-size: 50px;
+        margin: 50px 0 0 10px;
+    }
+    .abt p {
+        color: white;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .abtlist {
+        margin-bottom: 67px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .abtlist div {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .abtlist div i {
+        font-size: 60px;
+        color: #009688;
+    }
+    .abtlist div h2 {
+        font-size: 16px;
+        margin-top: 2px;
+    }
+    .abtlist div a {
+        color: blue;
+        display: inline-block;
+    }
+
+    /*SERVICES*/
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .products {
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .products .products1 {
+        width: 200px;
+    }
+    .products .products2 {
+        width: 290px;
+    }
+    .products .products3 {
+        width: 440px;
+    }
+}
+/*IPAD*/
+@media (max-width: 768px){
+    /*HOMEPAGE*/
+    .logo2 {
+        width: 620px;
+        float: none;
+        margin-right: 50px;
+    }
+    .container {
+        height: 130vh;
+    }
+    .homecontent {
+        display: block;
+    }
+    .homepage {
+        margin: 30px 0 0 60px;
+        float: none;
+        width: 650px;
+    }
+    .homepage h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .homepage p {
+        font-size: 25px;
+        text-align: justify;
+        margin-left: 38px;
+    }
+    .btn {
+        position: absolute;
+        left: 90px;
+    }
+    /*ABOUT*/
+    .logo3 {
+        float: none;
+        width: 695px;
+        margin: 100px 12px 0 0;
+    }
+    .abt {
+        float: none;
+        width: 692px;
+    }
+    .aboutcont {
+        display: block;
+    }
+    /*SERVICES*/
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .list div {
+        padding: 20px;
+    }
+    .list div h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .products {
+        margin-left: 40px;
+    }
+    .products .products1 {
+        width: 200px;
+    }
+    .products .products2 {
+        width: 290px;
+    }
+    .products .products3 {
+        width: 492px;
+    }
+
+    /*CONTACT*/
+    .contactcontainer {
+        padding-left: 70px;
+    }
+    .contact-left {
+        padding: 40px 30px;
+    }
+    .input-row .input-group {
+        flex-basis: 5%;
+    }
+    input {
+        border-bottom: 2px solid #ccc;
+    }
+    textarea {
+        border: 2px solid #ccc;
+    }
+    label {
+        margin-bottom: 8px;
+    }
+}
+/*IPHONE XR*/
+@media (max-width: 414px){
+    /*NAV*/
+    .logo {
+        font-size: 25px;
+    }
+    .navbar .toggle_btn {
+        font-size: 30px;
+    }
+    header {
+        padding: 15px 30px;
+    }
+    /*HOMEPAGE*/
+    .logo2 {
+        width: 390px;
+        margin-left: 11px;
+    }
+    .container {
+        height: 100vh;
+    }
+    .homepage {
+        margin: 10px 0 0 15px;
+        width: 390px;
+        text-align: justify;
+    }
+    .homepage h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .homepage p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .btn {
+        position: absolute;
+        left: 5px;
+        font-size: 15px;
+        padding: 15px 25px;
+        border-radius: 2px;
+    }
+    /*ABOUT*/
+    .logo3 {
+        width: 350px;
+        margin: 50px 0px 0 0px;
+    }
+    .abt {
+        width: 350px;
+    }
+    .aboutcont {
+        display: block;
+    }
+    .abt h2 {
+        margin-right: 20px;
+    }
+    .abt p {
+        margin-right: 20px;
+    }
+    .abtlist div {
+        padding: 20px;
+        font-size: 10px;
+    }
+    .abtlist div i {
+        font-size: 40px;
+    }
+    
+    /*SERVICES*/
+    #services {
+        height: 150vh;
+        padding: 18px;
+    }
+    .srvcs {
+        font-size: 20px;
+    }
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .list div {
+        padding: 20px;
+    }
+    .list div h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .list div i {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /*CONTACT*/
+    .contactcontainer {
+        padding: 20px;
+    }
+    .contact-box {
+        width: 200px
+    }
+    .contact-left {
+        padding: 40px 20px;
+    }
+    .contact-right {
+        padding: 40px 20px;
+        width: 198px;
+    }
+    .contactcontainer h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .contactcontainer p {
+        font-size: 20px;
+    }
+    tr td {
+        font-size: 10px;
+    }
+    .products {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .products .products1 {
+        width: 270px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .products .products2 {
+        width: 350px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .products .products3 {
+        width: 350px;
+        margin-left: 10px;
+    }
+}
+/*IPHONE SE*/
+@media (max-width: 375px){
+    /*NAV*/
+    .logo {
+        font-size: 30px;
+    }
+    /*HOMEPAGE*/
+    .logo2 {
+        width: 345px;
+        margin-left: 15px;
+    }
+    .container {
+        height: 130vh;
+    }
+    .homepage {
+        margin-top: 15px;
+        width: 350px;
+        text-align: justify;
+    }
+    .homepage h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .homepage p {
+        font-size: 12px;
+    }
+    .btn {
+        position: absolute;
+        left: 15px;
+        font-size: 13px;
+        padding: 13px 22px;
+    }
+    /*ABOUT*/
+    .logo3 {
+        width: 300px;
+    }
+    .abt {
+        width: 320px;
+    }
+    .abt p {
+        font-size: 12px;
+    }
+    .abt h2 {
+        font-size: 35px;
+    }
+    .abtlist div {
+        padding: 15px;
+    }
+    .abtlist div i {
+        font-size: 40px;
+    }
+    .abtlist{
+        margin:10px 15px 0 0;
+    }
+    /*SERVICES*/
+    #services {
+        height: 210vh;
+        padding: 20px;
+    }
+
+    /*CONTACT*/
+    .contactcontainer {
+        padding: 15px 10px;
+    }
+    .contact-box {
+        width: 180px
+        
+    }
+    .contact-left {
+        padding: 25px 15px;
+    }
+    .contact-right {
+        padding: 40px 20px;
+        width: 198px;
+    }
+    .contactcontainer h1 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .contactcontainer p {
+        font-size: 15px;
+    }
+    label {
+        font-size: 14px;
+    }
+    .products {
+        margin-top: 20px;
+    }
+    .products .products1 {
+        width: 270px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .products .products2 {
+        width: 330px;
+        margin-bottom: 20px;
+        margin-left: 1px;
+    }
+    .products .products3 {
+        width: 330px;
+        margin-left: 1px;
+    }
+}

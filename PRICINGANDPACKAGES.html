@@ -1,0 +1,392 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICING AND PACKAGES</title>
+    <script src="https://kit.fontawesome.com/47f8a8dec5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .a-title,
+        .b-title,
+        .c-title {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0.6rem 0;
+            text-transform: capitalize;
+        }
+        .a-title {
+            font-size: 2.5rem;
+            font-weight: 580;
+            text-align: center;
+            padding: 1.3rem 0;
+            opacity: 0.9;
+        }
+        .b-title {
+            font-size: 2rem;
+        }
+        .c-title {
+            font-weight: 300;
+            font-size: 1rem;
+        }
+        .description {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            opacity: 0.5;
+            margin: 0.4rem;
+        }
+
+        .products {
+            background: whitesmoke;
+            padding: 3.2rem 0;
+        }
+        .products .description {
+            text-align: center;
+            width: 70%;
+            margin: 0.9rem auto;
+        }
+        .product {
+            margin: 2rem;
+            position: relative;
+        }
+        .product-content {
+            height: 500px;
+            background: gray;
+            padding: 1.2rem 0.5rem 2rem 0.5rem;
+            cursor: pointer;
+        }
+        .product-img {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            transition: background 0.5s ease;
+        }
+        .pricing {
+            padding-top: 0.6rem;
+            padding-right: 0.6rem;
+            display: inline-block;
+        }
+        .product-info {
+            height: 240px;
+            background: white;
+            margin-top: 30px;
+            padding: 50px 50px 0 60px;
+        }
+        .product-info-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .rating span {
+            color: rgb(42, 192, 152);
+        }
+        .product-name {
+            color: black;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .product-price1 {
+            text-decoration: line-through;
+            color: rgb(42, 192, 152);
+            font-size: 17px;
+        }
+        .product-price2 {
+            font-weight: bold;
+            color: green;
+            font-size: 17px;
+        }
+        .product-img img {
+            transition: transform 0.6s ease;
+        }
+        .product:hover .product-img img {
+            transform: scale(1.1);
+        }
+        .off-info .c-title {
+            background: rgb(42, 192, 152);
+            color: white;
+            display: inline-block;
+            padding: 0.5rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            z-index: 1;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }
+
+        /*///////////////////////////////////////////*/
+        .product-img .elecguitar {
+            width: 220px;
+            display: inline;
+            margin-left: 90px;
+        }
+        .product-img .drumerist {
+            width: 290px;
+            margin-left: 60px;
+        }
+        .product-img .uke {
+            width: 330px;
+            margin-left: 40px;
+        }
+        .product-img .violint {
+            width: 220px;
+            margin-left: 100px;
+        }
+        .product-img .pianerist {
+            width: 380px;
+            margin-left: 20px;
+        }
+        .product-img .package {
+            width: 290px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="products">
+        <div class="container">
+        <h1 class="a-title">MUSICAL INSTRUMENTS PRICING AND PACKAGES</h1>
+        <p class="description">mciowncn cuweeciuw eicbibc iewbcubewb dubdd ffe  b cbd hcdshcjnxjbhwyhwevve khduejieeue</p>
+
+            <div class="product-items">
+            <!--SINGLE PRODUCT-->
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="guitar.jpg" alt="product image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">WOODEN GUITAR</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">STRING INSTRUMENT</p>
+                            <p class="product-price1">₱4,500.00 - ₱15,000.00</p>
+                            <p class="product-price2">₱3,375.00 - ₱11,250.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">25% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="elcecguitar.jpg" alt="product image" class="elecguitar">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">ELECTRIC GUITAR</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">STRING INSTRUMENT</p>
+                            <p class="product-price1">₱7,500.00 - ₱40,000.00</p>
+                            <p class="product-price2">₱6,000.00 - ₱32,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">20% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+                
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="drums.jpg" alt="product image" class="drumerist">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">DRUMS</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">PERCUSSION INSTRUMENT</p>
+                            <p class="product-price1">₱10,000.00 - ₱50,000.00</p>
+                            <p class="product-price2">₱9,000.00 - ₱45,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">10% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="ukulele.jpg" alt="product image" class="uke">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">UKULELE</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">STRING INSTRUMENT</p>
+                            <p class="product-price2">₱1,000.00 - ₱10,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">NO CURRENT DISCOUNT</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="violin.jpg" alt="product image" class="violint">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">VIOLIN</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">STRING INSTRUMENT</p>
+                            <p class="product-price1">₱3,000.00 - ₱15,000.00</p>
+                            <p class="product-price2">₱2,550.00 - ₱2,250.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">15% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="piano.jpg" alt="product image" class="pianerist">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">PIANO</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">KEYBOARD INSTRUMENT</p>
+                            <p class="product-price1">₱80,000.00 - ₱300,000.00</p>
+                            <p class="product-price2">₱76,000.00 - ₱285,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">5% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="pack.jfif" alt="product image" class="package">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-info-top">
+                                <h2 class="b-title">PACKAGE</h2>
+                                <div class="rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                            <p class="product-name">ALL INSTRUMENTS IN ONE PURCHASE</p>
+                            <p class="product-price1">₱95,400.00 - ₱387,000.00</p>
+                            <p class="product-price2">₱88,130.00 - ₱346,950.00</p>
+                            </div>
+                        </div>
+
+                        <div class="off-info">
+                            <h2 class="c-title">10% Off</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF SINGLE PRODUCT-->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

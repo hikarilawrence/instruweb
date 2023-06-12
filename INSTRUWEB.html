@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INSTRUWEB </title>
+    <script src="https://kit.fontawesome.com/47f8a8dec5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="INSTRUWEB.css">
+    <button onclick="goToTop()" id="scrollBtn">TOP</button>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="navbar">
+            <div class="logo"><i class="fa-solid fa-music"></i> INSTRU<span class="span1">WEB</span></div>
+            <ul class="links">
+                <li><a href="INSTRUWEB.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="#aboutus"><i class="fa-solid fa-address-card"></i> ABOUT</a></li>
+                <li><a href="#services"><i class="fa-solid fa-hammer"></i> SERVICES</a></li>
+                <li><a href="#contactus"><i class="fa-solid fa-address-book"></i> CONTACT</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="INSTRUWEB.html">HOME</a></li>
+                <li><a href="#aboutus">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contactus">CONTACT</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="homecontent">
+        
+        <div class="homepage">
+            <h1><span class="musical">MUSICAL</span><span class="instruments"> INSTRUMENTS</span></h1>
+            <p>We are proud to offer a wide range of <span class="s1">high-quality musical
+                instruments</span> that will inspire and elevate your musical journey. Whether you're a seasoned professional or 
+                just starting to explore the world of music, we have the
+                perfect instrument to suit your style and passion.</p>
+            <div>
+                <button type="button" class="btn"><a href="EXPLORE.html">OVERVIEW</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----ABOUT US SECTION---->
+<section id="aboutus">
+    <div class="aboutcont">
+        <img src="logo2.png" class="logo3">
+        <div class="abt">
+            <h2>ABOUT US</h2>
+            <p><span class="inst">INSTRUWEB</span> WAS CREATED BY A GROUP OF STUDENTS WHO SHARE THE SAME CONCEPT AND INSIGHT BY INSTRUMENTS.
+                IT WAS CREATED ON THE DAY OF JUNE 6, 2020 BY A GROUP OF 8 STUDENTS WHO WANT TO GATHER LOTS OF MUSICIANS 
+                THAT SHARE THE SAME CONCEPT AS THEM. SELL AND GATHER LOTS OF MUSICIANS WHO LOVE MUSICAL INSTRUMENTS AND 
+                CREATE APPLICATIONS THAT CAN PLAY MANY DIFFERENT MUSICAL INSTRUMENTS THAT WE WANT AND HEAR DIFFERENT 
+                KINDS OF MUSICAL INSTRUMENT PLAY. OUR WEBSITE IS COMMONLY USED IN MARKETING AND BUSINESS-RELATED TOPICS, 
+                WE PROVIDE SATISFACTION AND QUALITY PRODUCTS FOR OUR CUSTOMERS.</p>
+                <div class="abtlist">
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>OUR TEAM</h2>
+                        <a href="OURTEAM.html">KNOW MORE</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-person-circle-exclamation"></i>
+                        <h2>OUR MISSION</h2>
+                        <a href="OURMISSION.html">KNOW MORE</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-glasses"></i>
+                        <h2>OUR VISION</h2>
+                        <a href="OURVISION.html">KNOW MORE</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!----SERVICES SECTION---->
+<section id="services">
+    <div class="servicecont">
+        <h1 class="srvcs">OUR SERVICES: </h1>
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h2>PRICING AND PACKAGES</h2>
+                <p>SALES AND OFFERS</p>
+                <a href="PRICINGANDPACKAGES.html">LEARN MORE</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>SHIPPING AND RETURNS</h2>
+                <p>SHIPPING OPTIONS, DELIVERY TIMES...</p>
+                <a href="SHIIPINGANDRETURNS.html">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="products">
+            <img src="products1.jpg" class="products1">
+            <img src="products2.jpg" class="products2">
+            <img src="guitar.jpg" class="products3">
+        </div>
+    </div>
+</section>
+
+<!----CONTACT SECTION---->
+<section id="contactus">
+    <div class="contactcontainer">
+        <h1>CONNECT WITH US</h1>
+        <p>For concerns and interests please reach us and connect with us!</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>SEND YOUR MESSAGE</h3>
+                <form action="https://formspree.io/f/mlekqrgq" method="post">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name: </label>
+                            <input type="text" placeholder="John Doe" id="name" name="name"required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone: </label>
+                            <input type="text" id="phone" name="phone" placeholder="+639 7095 63125" required>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email: </label>
+                            <input type="email" id="email" name="email" placeholder="instruweb@gmail.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject: </label>
+                            <input type="text" id="subject" name="subject" placeholder="Product">
+                        </div>
+                    </div>
+
+                    <label>MESSAGE: </label>
+                    <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="btn2">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+            <h3>REACH US</h3>
+            <table>
+                <tr>
+                    <td>Email: </td>
+                    <td>instruweb@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone: </td>
+                    <td>+639 7095 63125</td>
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td>Sitio Victoria St. Brgy. San Juan, Cainta Rizal.</td>
+                </tr>
+            </table>
+            <div class="socialicons">
+                <a href="https://www.facebook.com/profile.php?id=100093367399616&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/kplandres?igshid=MzNINGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----FOOTER---->
+<footer>
+    <div class="footer-content">
+        <h3>INSTRUWEB</h3>
+        <p>Company of the best quality musical instruments.</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/profile.php?id=100093367399616&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/notverra__?t=p3j61G17vdr1yPzKooSYQw&s=09"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/kplandres?igshid=MzNINGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="mitchlawrencebobis6@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2023 <span>Instruweb</span>.</p>
+    </div>
+</footer>
+
+
+<!----------------------------JAVASCRIPT------------------------------->
+<script>
+    // Toggle Button
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+    // Scroll to the top when the button is clicked
+    function goToTop() {
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+    });
+}
+
+</script>
+</body>
+</html>

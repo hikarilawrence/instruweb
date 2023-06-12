@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE INSTRUWEB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;   
+        }
+        .container {
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(guitar.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            grid-gap: 40px;
+            cursor: pointer;
+        }
+        .list div {
+            margin: 100px 50px 100px 50px;
+            background-color: #161616;
+            padding: 30px;
+            border: 2px double #009688;
+        }
+        .guitarimg {
+            width: 430px;
+            height: 360px;
+        }
+        .pianoimg {
+            width: 425px;
+            height: 350px;
+        }
+        .electricguitarimg {
+            width: 400px;
+            padding: 40px 8px 0 15px;
+        }
+        .drumsimg {
+            width: 420px;
+        }
+        .ukuleleimg {
+            width: 350px;
+            padding-left: 40px;
+        }
+        .list h2 {
+            color: goldenrod;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .list p {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        .explorecont h1 {
+            font-size: 50px;
+            color: coral;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 50px 55px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="explorecont">
+            <h1>OVERVIEW: </h1>
+        </div>
+        <div class="list">
+        <div class="guitar">
+            <img src="guitar.jpg" class="guitarimg">
+            <h2>GUITAR</h2>
+            <p>Variety colors and quality materials of guitar.</p>
+        </div>
+        <div class="piano">
+            <img src="piano.jpg" class="pianoimg">
+            <h2>PIANO</h2>
+            <p>Imported brands and new designs.</p>
+        </div>
+        <div class="electricguitar">
+            <img src="elcecguitar.jpg" class="electricguitarimg">
+            <h2>ELECTRIC GUITAR</h2>
+            <p>Exclusive sound range.</p>
+        </div>
+        <div class="drums">
+            <img src="drums.jpg" class="drumsimg">
+            <h2>DRUMS</h2>
+            <p>Loud booms.</p>
+        </div>
+        <div class="ukulele">
+            <img src="ukulele.jpg" class="ukuleleimg">
+            <h2>UKULELE</h2>
+            <p>Delivers an enjoyable sound and produces pleasing music.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
